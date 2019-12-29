@@ -1,0 +1,126 @@
+//body of index pages
+
+#carouselId{
+    height: 75rem;
+    position: relative;
+    .carousel-inner{
+        height: 100%;
+        width: 100%;
+        .carousel-item{
+            height: 100%;
+            .box-information{
+                padding: 4rem;
+                width: 55%;
+                background: $color-black-fade;
+                position: absolute;
+                top: 35%;
+                left: 20%;
+                transform: translate(-20%,-40%);
+                color: $color-white;
+                border-left: 2px solid $primary-color;
+                h2{
+                    font-size: 7rem;
+                    margin-bottom: 3rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+#games{
+    padding: 7rem 0;
+    .box-console{
+        padding: 3rem;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 10rem;
+            display: block;
+            margin-bottom: 4rem;
+        }
+        button{
+            @include custom-button();
+            @include custom-box-size();
+            &:focus{
+                outline-color: saturate($color: $primary-color, $amount: 80%);
+            }
+            &:hover{
+                background: $color-black;
+            }
+        }
+    }
+}
+
+#months-pick{
+    padding: 5rem 0;
+    font-size: 1.3rem;
+    background: $color-black-fine;
+    h2{
+        font-size: 4rem;
+        font-weight: bold;
+        color: $color-white;
+        margin-bottom: 3rem;
+    }
+}
+
+#videojs{
+    padding: 10rem;
+    .main-box__video{
+        li{
+            background: $color-black-fine;
+            padding: 1.5rem;
+            border: 1px solid $color-white;
+            cursor: pointer;
+            transition: $hover-transition-duration;
+            &:hover{
+                background-color: $primary-color;
+            }
+            a{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                p{
+                    color: $color-white;
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                }
+                small{
+                    @extend p;
+                    font-style:italic;
+                    color: $color-black-light;
+                }
+            }
+        }
+        .box-video{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            button{
+                @include center-element();
+                background: $color-red-fade;
+                border:none;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                color: $color-white;
+                box-shadow: $perfect-box-shadow;
+                cursor: pointer;
+                transition: $hover-transition-duration;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    background: $primary-color;
+                }
+            }
+            
+
+        }
+    }
+}

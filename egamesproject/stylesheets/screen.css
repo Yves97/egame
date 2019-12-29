@@ -1,0 +1,605 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, #videojs .main-box__video li a small, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_own-structure.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, ../sass/partials/_own-structure.scss */
+body {
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/partials/_own-structure.scss */
+a, a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 1, ../sass/partials/_header.scss */
+header {
+  padding-top: 1.2rem;
+}
+/* line 3, ../sass/partials/_header.scss */
+header .top-header {
+  height: 5rem;
+}
+/* line 5, ../sass/partials/_header.scss */
+header .top-header .logo-link {
+  float: left;
+}
+/* line 8, ../sass/partials/_header.scss */
+header .top-header .form-search {
+  float: right;
+  display: table;
+}
+/* line 11, ../sass/partials/_header.scss */
+header .top-header .form-search input {
+  outline: none;
+  background: #ebf5f5;
+  border: none;
+  font-style: italic;
+  width: 25rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+/* line 14, ../sass/partials/_header.scss */
+header .top-header .form-search input:focus {
+  outline: 1px solid #20d8da;
+}
+/* line 18, ../sass/partials/_header.scss */
+header .top-header .form-search button {
+  border: none;
+  background: #20d8da;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 1rem;
+  transition: all 0.4s;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+/* line 21, ../sass/partials/_header.scss */
+header .top-header .form-search button:focus {
+  outline-color: #00f7fa;
+}
+/* line 24, ../sass/partials/_header.scss */
+header .top-header .form-search button:hover {
+  background: #000;
+}
+/* line 30, ../sass/partials/_header.scss */
+header .under-header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* line 33, ../sass/partials/_header.scss */
+header .under-header .navbar {
+  height: 7rem;
+}
+/* line 35, ../sass/partials/_header.scss */
+header .under-header .navbar li {
+  padding-right: 1rem;
+}
+/* line 37, ../sass/partials/_header.scss */
+header .under-header .navbar li a {
+  color: #545454;
+  transition: all 0.4s;
+}
+/* line 40, ../sass/partials/_header.scss */
+header .under-header .navbar li a:hover {
+  color: #20d8da;
+}
+
+/* line 3, ../sass/partials/_main.scss */
+#carouselId {
+  height: 75rem;
+  position: relative;
+}
+/* line 6, ../sass/partials/_main.scss */
+#carouselId .carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+/* line 9, ../sass/partials/_main.scss */
+#carouselId .carousel-inner .carousel-item {
+  height: 100%;
+}
+/* line 11, ../sass/partials/_main.scss */
+#carouselId .carousel-inner .carousel-item .box-information {
+  padding: 4rem;
+  width: 55%;
+  background: rgba(0, 0, 0, 0.356);
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-20%, -40%);
+  color: #fff;
+  border-left: 2px solid #20d8da;
+}
+/* line 21, ../sass/partials/_main.scss */
+#carouselId .carousel-inner .carousel-item .box-information h2 {
+  font-size: 7rem;
+  margin-bottom: 3rem;
+}
+/* line 25, ../sass/partials/_main.scss */
+#carouselId .carousel-inner .carousel-item .box-information p, #carouselId .carousel-inner .carousel-item .box-information #videojs .main-box__video li a small, #videojs .main-box__video li a #carouselId .carousel-inner .carousel-item .box-information small {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+/* line 34, ../sass/partials/_main.scss */
+#games {
+  padding: 7rem 0;
+}
+/* line 36, ../sass/partials/_main.scss */
+#games .box-console {
+  padding: 3rem;
+  text-align: center;
+}
+/* line 39, ../sass/partials/_main.scss */
+#games .box-console img {
+  width: 100%;
+  height: 10rem;
+  display: block;
+  margin-bottom: 4rem;
+}
+/* line 45, ../sass/partials/_main.scss */
+#games .box-console button {
+  border: none;
+  background: #20d8da;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 1rem;
+  transition: all 0.4s;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+/* line 48, ../sass/partials/_main.scss */
+#games .box-console button:focus {
+  outline-color: #00f7fa;
+}
+/* line 51, ../sass/partials/_main.scss */
+#games .box-console button:hover {
+  background: #000;
+}
+
+/* line 58, ../sass/partials/_main.scss */
+#months-pick {
+  padding: 5rem 0;
+  font-size: 1.3rem;
+  background: #0e0e0e;
+}
+/* line 62, ../sass/partials/_main.scss */
+#months-pick h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+/* line 70, ../sass/partials/_main.scss */
+#videojs {
+  padding: 10rem;
+}
+/* line 73, ../sass/partials/_main.scss */
+#videojs .main-box__video li {
+  background: #0e0e0e;
+  padding: 1.5rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+/* line 79, ../sass/partials/_main.scss */
+#videojs .main-box__video li:hover {
+  background-color: #20d8da;
+}
+/* line 83, ../sass/partials/_main.scss */
+#videojs .main-box__video li a img {
+  width: 100%;
+  height: 100%;
+}
+/* line 87, ../sass/partials/_main.scss */
+#videojs .main-box__video li a p, #videojs .main-box__video li a small {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+/* line 93, ../sass/partials/_main.scss */
+#videojs .main-box__video li a small {
+  font-style: italic;
+  color: #545454;
+}
+/* line 100, ../sass/partials/_main.scss */
+#videojs .main-box__video .box-video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+/* line 104, ../sass/partials/_main.scss */
+#videojs .main-box__video .box-video button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 0, 0, 0.336);
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.356);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+/* line 115, ../sass/partials/_main.scss */
+#videojs .main-box__video .box-video button:focus {
+  outline: none;
+}
+/* line 118, ../sass/partials/_main.scss */
+#videojs .main-box__video .box-video button:hover {
+  background: #20d8da;
+}
+
+/* line 2, ../sass/partials/_owl-carousel-lib.scss */
+.slider_in {
+  padding: 65px 40px 80px 40px;
+  margin: 0 auto;
+}
+
+/* line 7, ../sass/partials/_owl-carousel-lib.scss */
+.img_wrp {
+  background: #fff;
+  padding: 5px;
+  height: 300px;
+}
+
+/* line 13, ../sass/partials/_owl-carousel-lib.scss */
+.img_wrp img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, ../sass/partials/_owl-carousel-lib.scss */
+.owl-prev {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  left: -50px;
+  cursor: pointer;
+  font-size: 0.1px;
+  top: 37%;
+  width: 45px;
+  height: 30px;
+  background-color: #20d8da;
+  background: url("../img/left-arrow.svg") no-repeat;
+}
+
+/* line 32, ../sass/partials/_owl-carousel-lib.scss */
+.owl-next {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  right: -51px;
+  cursor: pointer;
+  font-size: 0.1px;
+  top: 37%;
+  width: 45px;
+  height: 30px;
+  background-color: #20d8da;
+  background: url("../img/right-arrow.svg") no-repeat;
+}
+
+/* line 47, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel,
+.owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+/* line 53, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 60, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+/* line 64, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+/* line 68, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 91, ../sass/partials/_owl-carousel-lib.scss */
+.owl-height {
+  -webkit-transition: height .5s ease-in-out;
+  -moz-transition: height .5s ease-in-out;
+  -ms-transition: height .5s ease-in-out;
+  -o-transition: height .5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+/* line 99, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 105, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-stage {
+  position: relative;
+}
+
+/* line 109, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 118, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 124, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-controls .owl-dot,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-nav .owl-prev {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 136, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+/* line 140, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+/* line 145, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+/* line 149, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+
+/* line 153, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 164, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 171, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+/* line 178, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+/* line 186, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+/* line 190, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* line 194, ../sass/partials/_owl-carousel-lib.scss */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/* line 198, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity .4s ease;
+  -moz-transition: opacity .4s ease;
+  -ms-transition: opacity .4s ease;
+  -o-transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
+}
+
+/* line 207, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+/* line 213, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url(owl.video.play.png) no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: scale .1s ease;
+  -moz-transition: scale .1s ease;
+  -ms-transition: scale .1s ease;
+  -o-transition: scale .1s ease;
+  transition: scale 0.1s ease;
+}
+
+/* line 232, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  -moz-transition: scale(1.3, 1.3);
+  -ms-transition: scale(1.3, 1.3);
+  -o-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3);
+}
+
+/* line 240, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-video-playing .owl-video-play-icon,
+.owl-carousel .owl-video-playing .owl-video-tn {
+  display: none;
+}
+
+/* line 245, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  -webkit-transition: opacity .4s ease;
+  -moz-transition: opacity .4s ease;
+  -ms-transition: opacity .4s ease;
+  -o-transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
+}
+
+/* line 261, ../sass/partials/_owl-carousel-lib.scss */
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,47 @@
+header{
+    padding-top: 1.2rem;
+    .top-header{
+        height: 5rem;
+        .logo-link{
+            float: left;
+        }
+        .form-search{
+            float: right;
+            display: table;
+            input{
+                @include custom-input();
+                @include custom-box-size();
+                &:focus{
+                    outline: 1px solid $primary-color;
+                }
+            }
+            button{
+                @include custom-button();
+                @include custom-box-size();
+                &:focus{
+                    outline-color: saturate($color: $primary-color, $amount: 80%);
+                }
+                &:hover{
+                    background: $color-black;
+                }
+            }
+        }
+    }
+    .under-header{
+        font-size: 2rem;
+        font-weight: bold;
+        .navbar{
+            height: 7rem;
+            li{
+                padding-right: 1rem;
+                a{
+                    color: $color-black-light;
+                    transition: $hover-transition-duration;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@mixin custom-input{
+    outline: none;
+    background: $color-white-light;
+    border:none;
+    font-style: italic;
+    width: 25rem;
+}
+
+@mixin custom-button {
+    border:none;
+    background: $primary-color;
+    cursor: pointer;
+    color: $color-white;
+    margin-left: 1rem;
+    transition: $hover-transition-duration;
+}
+
+@mixin custom-box-size {
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+@mixin center-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
