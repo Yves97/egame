@@ -257,37 +257,36 @@ header .under-header .navbar li a:hover {
   background: #0e0e0e;
   padding: 1.5rem;
   border: 1px solid #fff;
-  cursor: pointer;
   transition: all 0.4s;
 }
-/* line 82, ../sass/partials/_main.scss */
+/* line 81, ../sass/partials/_main.scss */
 #videojs .main-box__video ul li:hover {
   background-color: #20d8da;
 }
-/* line 86, ../sass/partials/_main.scss */
+/* line 85, ../sass/partials/_main.scss */
 #videojs .main-box__video ul li a img {
   width: 100%;
   height: 100%;
 }
-/* line 90, ../sass/partials/_main.scss */
+/* line 89, ../sass/partials/_main.scss */
 #videojs .main-box__video ul li a p, #videojs .main-box__video ul li a small {
   color: #fff;
   font-size: 1.3rem;
   line-height: 2rem;
   margin-bottom: 2rem;
 }
-/* line 96, ../sass/partials/_main.scss */
+/* line 95, ../sass/partials/_main.scss */
 #videojs .main-box__video ul li a small {
   font-style: italic;
   color: #545454;
 }
-/* line 104, ../sass/partials/_main.scss */
+/* line 103, ../sass/partials/_main.scss */
 #videojs .main-box__video .box-video {
   height: 100%;
   width: 100%;
   position: relative;
 }
-/* line 108, ../sass/partials/_main.scss */
+/* line 107, ../sass/partials/_main.scss */
 #videojs .main-box__video .box-video button {
   position: absolute;
   top: 50%;
@@ -303,45 +302,51 @@ header .under-header .navbar li a:hover {
   cursor: pointer;
   transition: all 0.4s;
 }
-/* line 119, ../sass/partials/_main.scss */
+/* line 118, ../sass/partials/_main.scss */
 #videojs .main-box__video .box-video button:focus {
   outline: none;
 }
-/* line 122, ../sass/partials/_main.scss */
+/* line 121, ../sass/partials/_main.scss */
 #videojs .main-box__video .box-video button:hover {
   background: #20d8da;
 }
 
-/* line 130, ../sass/partials/_main.scss */
+/* line 129, ../sass/partials/_main.scss */
 #articles {
   padding: 5rem 0;
   background: #0e0e0e;
 }
-/* line 133, ../sass/partials/_main.scss */
+/* line 132, ../sass/partials/_main.scss */
+#articles h3 {
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+/* line 137, ../sass/partials/_main.scss */
 #articles li {
   padding: 1rem;
   border: 2px solid #0e0e0e;
   transition: all 0.4s;
   margin-bottom: 1.5rem;
 }
-/* line 138, ../sass/partials/_main.scss */
+/* line 142, ../sass/partials/_main.scss */
 #articles li:hover {
   border: 2px solid #20d8da;
 }
-/* line 145, ../sass/partials/_main.scss */
+/* line 147, ../sass/partials/_main.scss */
 #articles li .col-md-8 a h3 {
   font-size: 4rem;
   color: #fff;
   font-weight: bold;
   margin-bottom: 3.5rem;
 }
-/* line 153, ../sass/partials/_main.scss */
+/* line 155, ../sass/partials/_main.scss */
 #articles li .col-md-8 .col-md-6 > h3 {
   font-size: 1.4rem;
   color: #fff;
   margin-bottom: 2rem;
 }
-/* line 159, ../sass/partials/_main.scss */
+/* line 161, ../sass/partials/_main.scss */
 #articles li .col-md-8 p, #articles #videojs .main-box__video ul li .col-md-8 a small, #videojs .main-box__video ul #articles li .col-md-8 a small, #articles #videojs .main-box__video ul li a .col-md-8 small, #videojs .main-box__video ul #articles li a .col-md-8 small {
   font-size: 1.5rem;
   color: #fff;
@@ -641,6 +646,40 @@ header .under-header .navbar li a:hover {
 .owl-carousel .owl-video-frame {
   position: relative;
   z-index: 1;
+}
+
+/* line 1, ../sass/partials/_footer.scss */
+footer {
+  padding: 2rem;
+  background: #0e0e0e;
+  border-top: 2px solid #ebf5f5;
+  color: #fff;
+  position: relative;
+}
+/* line 8, ../sass/partials/_footer.scss */
+footer .footer-item h3 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+/* line 12, ../sass/partials/_footer.scss */
+footer .footer-item p, footer .footer-item #videojs .main-box__video ul li a small, #videojs .main-box__video ul li a footer .footer-item small {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  color: #545454;
+}
+/* line 17, ../sass/partials/_footer.scss */
+footer .footer-item li {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+}
+/* line 20, ../sass/partials/_footer.scss */
+footer .footer-item li a {
+  color: #545454;
+  transition: all 0.4s;
+}
+/* line 23, ../sass/partials/_footer.scss */
+footer .footer-item li a:hover {
+  color: #20d8da;
 }
 
 /*# sourceMappingURL=screen.css.map */
