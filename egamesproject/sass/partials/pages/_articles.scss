@@ -1,0 +1,64 @@
+#presentation{
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    padding: 1rem;
+    &:hover{
+        .category-title{
+            background: $primary-color;
+            border-left: 2px solid $color-white;
+        }
+    }
+    .category-title{
+        padding: 2rem;
+        background: $color-black-fade;
+        width: 25rem;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%,-50%);
+        border-left: 2px solid $primary-color;
+        transition: $hover-transition-duration;
+        h2{
+            color: $color-white;
+            font-size: 4rem;
+        }
+    }
+}
+#release{
+    padding: 5rem 0;
+    background: $color-black-fine;
+    .img-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        img{
+            width: 80%;
+            height: 80%;
+        }
+    }
+    h3{
+        font-size: 4rem;
+        margin-bottom: 4rem;
+        color: $color-white;
+        transition: $hover-transition-duration;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    p{
+        font-size: 1.7rem;
+        color: $color-black-light;
+        line-height: 4rem;
+    }
+    button{
+        @include custom-button();
+        @include custom-box-size();
+        transition: $hover-transition-duration;
+        box-shadow: $perfect-box-shadow;
+        &:hover{
+            background: $color-black-fine;
+        }
+    }
+}
