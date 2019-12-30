@@ -1,0 +1,51 @@
+@media screen and (max-width:740px){
+    header{
+        padding-top: 1.2rem;
+        .top-header{
+            height: unset;
+            .logo-link{
+                float: none;
+            }
+            .form-search{
+                float: none;
+                button{
+                    margin: 1rem 0;
+                    display: block;
+                }
+            }
+        }
+        .under-header{
+            .navbar{
+                height: unset;
+                display: block;
+                .navbar-toggler{
+                    border: 2px solid $primary-color !important;
+                }
+            }
+        }
+    }
+    #carouselId{
+        .carousel-inner{
+            .carousel-item{
+                height: 100%;
+                .box-information{
+                    padding: 1rem;
+                    width: unset;
+                }
+            }
+        }
+    }
+    #videojs{
+        padding: 1rem;
+        .main-box__video{
+            ul{
+                height: 50rem;
+            }
+            .box-video{
+                height: 50rem;
+                margin-top: 2rem;
+                box-shadow: $perfect-box-shadow;
+            }
+        }
+    }
+}

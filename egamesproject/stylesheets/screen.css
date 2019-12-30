@@ -120,38 +120,38 @@ header .top-header .form-search button {
   background: #20d8da;
   cursor: pointer;
   color: #fff;
-  margin-left: 1rem;
   transition: all 0.4s;
   font-size: 1.8rem;
   padding: 1rem;
+  margin-left: 1rem;
 }
-/* line 21, ../sass/partials/_header.scss */
+/* line 22, ../sass/partials/_header.scss */
 header .top-header .form-search button:focus {
   outline-color: #00f7fa;
 }
-/* line 24, ../sass/partials/_header.scss */
+/* line 25, ../sass/partials/_header.scss */
 header .top-header .form-search button:hover {
   background: #000;
 }
-/* line 30, ../sass/partials/_header.scss */
+/* line 31, ../sass/partials/_header.scss */
 header .under-header {
   font-size: 2rem;
   font-weight: bold;
 }
-/* line 33, ../sass/partials/_header.scss */
+/* line 34, ../sass/partials/_header.scss */
 header .under-header .navbar {
   height: 7rem;
 }
-/* line 35, ../sass/partials/_header.scss */
+/* line 36, ../sass/partials/_header.scss */
 header .under-header .navbar li {
   padding-right: 1rem;
 }
-/* line 37, ../sass/partials/_header.scss */
+/* line 38, ../sass/partials/_header.scss */
 header .under-header .navbar li a {
   color: #545454;
   transition: all 0.4s;
 }
-/* line 40, ../sass/partials/_header.scss */
+/* line 41, ../sass/partials/_header.scss */
 header .under-header .navbar li a:hover {
   color: #20d8da;
 }
@@ -215,7 +215,6 @@ header .under-header .navbar li a:hover {
   background: #20d8da;
   cursor: pointer;
   color: #fff;
-  margin-left: 1rem;
   transition: all 0.4s;
   font-size: 1.8rem;
   padding: 1rem;
@@ -680,6 +679,64 @@ footer .footer-item li a {
 /* line 23, ../sass/partials/_footer.scss */
 footer .footer-item li a:hover {
   color: #20d8da;
+}
+
+@media screen and (max-width: 740px) {
+  /* line 2, ../sass/partials/_media-queries.scss */
+  header {
+    padding-top: 1.2rem;
+  }
+  /* line 4, ../sass/partials/_media-queries.scss */
+  header .top-header {
+    height: unset;
+  }
+  /* line 6, ../sass/partials/_media-queries.scss */
+  header .top-header .logo-link {
+    float: none;
+  }
+  /* line 9, ../sass/partials/_media-queries.scss */
+  header .top-header .form-search {
+    float: none;
+  }
+  /* line 11, ../sass/partials/_media-queries.scss */
+  header .top-header .form-search button {
+    margin: 1rem 0;
+    display: block;
+  }
+  /* line 18, ../sass/partials/_media-queries.scss */
+  header .under-header .navbar {
+    height: unset;
+    display: block;
+  }
+  /* line 21, ../sass/partials/_media-queries.scss */
+  header .under-header .navbar .navbar-toggler {
+    border: 2px solid #20d8da !important;
+  }
+
+  /* line 29, ../sass/partials/_media-queries.scss */
+  #carouselId .carousel-inner .carousel-item {
+    height: 100%;
+  }
+  /* line 31, ../sass/partials/_media-queries.scss */
+  #carouselId .carousel-inner .carousel-item .box-information {
+    padding: 1rem;
+    width: unset;
+  }
+
+  /* line 38, ../sass/partials/_media-queries.scss */
+  #videojs {
+    padding: 1rem;
+  }
+  /* line 41, ../sass/partials/_media-queries.scss */
+  #videojs .main-box__video ul {
+    height: 50rem;
+  }
+  /* line 44, ../sass/partials/_media-queries.scss */
+  #videojs .main-box__video .box-video {
+    height: 50rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.356);
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
