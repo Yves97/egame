@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime&display=swap");
 /* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, #videojs .main-box__video ul li a small, blockquote, pre,
@@ -67,17 +68,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/partials/_own-structure.scss */
+/* line 2, ../sass/partials/_own-structure.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 5, ../sass/partials/_own-structure.scss */
+/* line 6, ../sass/partials/_own-structure.scss */
 body {
   box-sizing: border-box;
+  font-family: 'Courier Prime', monospace;
 }
 
-/* line 9, ../sass/partials/_own-structure.scss */
+/* line 11, ../sass/partials/_own-structure.scss */
 a, a:hover {
   text-decoration: none;
   color: #000;
@@ -811,30 +813,31 @@ footer .footer-item li a:hover {
 }
 /* line 41, ../sass/partials/pages/_contacts.scss */
 #getIn .main-box__form form .group-input input, #getIn .main-box__form form .group-input textarea {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   border: none;
   background: #eff4f9;
   width: 100%;
   padding: 1.2rem;
 }
-/* line 47, ../sass/partials/pages/_contacts.scss */
+/* line 48, ../sass/partials/pages/_contacts.scss */
 #getIn .main-box__form form .group-input input:focus, #getIn .main-box__form form .group-input textarea:focus {
   outline: none;
 }
-/* line 50, ../sass/partials/pages/_contacts.scss */
+/* line 51, ../sass/partials/pages/_contacts.scss */
 #getIn .main-box__form form .group-input input::placeholder, #getIn .main-box__form form .group-input textarea::placeholder {
   font-weight: bold;
   font-style: italic;
 }
-/* line 56, ../sass/partials/pages/_contacts.scss */
+/* line 57, ../sass/partials/pages/_contacts.scss */
 #getIn .main-box__form form button {
-  width: 100%;
-  padding: 1rem;
   border: none;
   background: #20d8da;
   cursor: pointer;
   color: #fff;
   transition: all 0.4s;
+  width: 100%;
+  padding: 1rem;
   font-size: 1.5rem;
 }
 
